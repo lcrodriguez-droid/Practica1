@@ -14,3 +14,15 @@ def desapilar():
 def mostrar_pila():
     if not pila:
         print("No hay libros")
+    else:
+        print("Pila actual:", pila)
+        print("Libro en el tope:", pila[-1])
+
+# Solicitar nombres de libros mediante input() (Paso 4)
+for i in range(3):
+    nombre_libro = input("Ingrese el nombre del libro a apilar: ")
+    apilar(nombre_libro)
+
+mostrar_pila()
+desapilar()
+mostrar_pila()
